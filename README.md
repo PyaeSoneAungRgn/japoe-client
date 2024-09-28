@@ -1,6 +1,6 @@
 # A Self-Hosted Error Tracking Solution for Laravel
 
-This is a client package for [JaPoe](japoe.pyaesoneaung.dev), a self-hosted error tracking system that allows you to monitor and manage errors.
+This is a client package for [JaPoe](https://japoe.pyaesoneaung.dev), a self-hosted error tracking system that allows you to monitor and manage errors.
 
 ## Requirements
 
