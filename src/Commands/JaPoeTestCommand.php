@@ -38,7 +38,7 @@ class JaPoeTestCommand extends Command
                     if ($result->ok()) {
                         $this->info('✅ Success!');
                     } else {
-                        $this->error('Error: '.($result->json('message') ?: $result->body()));
+                        $this->error('Error: '.$result->json('message'));
                     }
                 } elseif ($result instanceof Throwable) {
                     $this->error('Error: '.$result->getMessage());

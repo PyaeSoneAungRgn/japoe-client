@@ -21,8 +21,8 @@ class BacktraceHandler implements BacktraceHandlerContract
         /** @var array<int, ErrorLogFrameDto> */
         $errorLogFrames = [];
 
-        foreach ($frames as $frame) {
-            if ($frame->applicationFrame) {
+        foreach ($frames as $index => $frame) {
+            if ($frame->applicationFrame || $index == 0) {
                 $errorLogFrames[] = new ErrorLogFrameDto(
                     snippet: $frame->getSnippet(config('japoe-client.total_line_number', 20)),
                     line_number: $frame->lineNumber,
